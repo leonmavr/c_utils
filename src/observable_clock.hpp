@@ -1,3 +1,6 @@
+#ifndef OBSERVABLE_CLOCK_H_
+#define OBSERVABLE_CLOCK_H_
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stddef.h> // size_t
@@ -136,3 +139,6 @@ clock_add_observer(&clk, &node2);
 for (int t = 0; t < 400; t += 25) {
     clock_tick(&clk, 25);
 #endif
+
+#endif // OBSERVABLE_CLOCK_H_
+
